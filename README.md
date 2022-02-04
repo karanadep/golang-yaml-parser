@@ -13,23 +13,28 @@ output:
 
 # steps
 
+
+
+1. let us run go in a docker container
+
 ```
-# let us run go in a docker container
-
-go version
-
 docker build --target dev . -t go
 docker run -it -v ${PWD}:/work go sh
+```
 
-# validating code
+2. validating code
+```
 go run cmd/main.go
+```
 
-# Build your application into a static binary
-cd cmd
-go build -o parser
+3. Build your application into a static binary
+```
+go build -o bin/parser cmd/main.go
+```
 
-# This will produce a compiled program - parser
-./parser
+4. This will produce a compiled program - parser
+```
+./bin/parser
 ```
 
 # todo
