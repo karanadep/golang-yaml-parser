@@ -1,10 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"io/ioutil"
+	"path/filepath"
+)
 
 func main() {
-	prices := [3]int{12, 24, 56}
-	prices[2] = 11
+	filename, _ := filepath.Abs("templates/test.yaml")
+	yamlfile, err := ioutil.ReadFile(filename)
 
-	fmt.Println(prices)
+	if err != nil {
+		panic(err)
+	}
+	var config config
 }

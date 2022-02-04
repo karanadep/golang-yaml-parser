@@ -1,0 +1,6 @@
+---
+cloud:
+  ${CLOUD_PROVIDER}:
+    - environment: ${ENVIRONMENT}
+      account: ${ACCOUNT}
+      adgroup: ${AD_GROUP}

@@ -1,0 +1,6 @@
+{
+    "ENVIRONMENT": "TEST",
+    "ACCOUNT": "1231231230",
+    "CLOUD_PROVIDER": "aws",
+    "AD_GROUP": "org.technology.group.team.squad"
+}
