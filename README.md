@@ -32,7 +32,7 @@ go build -o parser
 ./parser
 ```
 
-# checklist of applications / microservices CI process.
+# todo
 - implement as cli
 - add unit tests
 - add code coverage
